@@ -1,18 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Jacks Media`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `J4cks`,
+      summary: `an entity also on Earth just like you`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `__j4cks__`,
     },
   },
   plugins: [
     `gatsby-plugin-image`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

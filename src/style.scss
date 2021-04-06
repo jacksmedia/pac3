@@ -27,10 +27,10 @@
   --spacing-20: 5rem;
   --spacing-24: 6rem;
   --spacing-32: 8rem;
-  --fontFamily-sans: Montserrat, system-ui, -apple-system, BlinkMacSystemFont,
+  --fontFamily-sans: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --fontFamily-serif: "Merriweather", "Georgia", Cambria, "Times New Roman",
+  --fontFamily-serif: "Balthazar", "Georgia", Cambria, "Times New Roman",
     Times, serif;
   --font-body: var(--fontFamily-serif);
   --font-heading: var(--fontFamily-sans);
@@ -61,6 +61,21 @@
   --color-heading-black: black;
   --color-accent: #d1dce5;
 }
+
+/* special component styling b/c local stylesheets suck */
+.btn, .navbar-item {
+  font-family: 'Balthazar', serif;
+}
+
+
+/* jacks logo brand color: #DD3C00 */
+$jacks-red: #DD3C00;
+$jacks-red-invert: #fff;
+
+$primary: $jacks-red;
+$primary-invert: $jacks-red-invert;
+$body-color: #224;
+$black: #222222;
 
 /* HTML elements */
 
@@ -317,6 +332,12 @@ a:focus {
 
 .gatsby-highlight {
   margin-bottom: var(--spacing-8);
+}
+
+
+/* testing */
+.geez {
+  font-family: 'Balthazar', serif;
 }
 
 /* Media queries */
