@@ -12,6 +12,19 @@ module.exports = {
     },
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Jacks Media`,
+        short_name: `JacksMedia`,
+        start_url: `/`,
+        background_color: `#0005FF`,
+        theme_color: `#DD3C00`,
+        display: `standalone`,
+        icon: `src/images/gatsby-icon.png`,
+        crossOrigin: `use-credentials`,
+      },
+    },
     `gatsby-plugin-image`,
     `gatsby-plugin-sass`,
     {
@@ -110,22 +123,10 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Jacks Media`,
-        short_name: `JacksMedia`,
-        start_url: `/`,
-        background_color: `#0500FF`,
-        theme_color: `#DD3C00`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
-    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
