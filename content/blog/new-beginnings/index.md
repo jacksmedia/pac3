@@ -1,25 +1,32 @@
 ---
-title: New Beginnings
-date: "2015-05-28T22:40:32.169Z"
-description: This is a custom description for SEO and Open Graph purposes, rather than the default generated excerpt. Simply add a description field to the frontmatter.
+title: Build Your Own App
+date: "2021-05-05T05:25:25.252Z"
+description: We’ll Use GatsbyJS, which will build us a website with a candy coating that makes it work like an app
 ---
 
-Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-right at the coast of the Semantics, a large language ocean. A small river named
-Duden flows by their place and supplies it with the necessary regelialia.
+We’ll Use GatsbyJS, which will build us a website with a candy coating that makes it work like an app
 
-## On deer horse aboard tritely yikes and much
+## get your accounts set
+- Netlify
+	- free and amazing
+- GitHub
+	- free and byzantine, but essential
+- Google AdSense (optional)
 
-The Big Oxmox advised her not to do so, because there were thousands of bad
-Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
-didn’t listen. She packed her seven versalia, put her initial into the belt and
-made herself on the way.
 
-- This however showed weasel
-- Well uncritical so misled
-  - this is very interesting
-- Goodness much until that fluid owl
+## get your tools set
+- 📝⌨️ Code editor, the impeccable Sublime Text 3
+	- free to use forever, professional-grade coding tool (VSCode and Atom are also OK, these are more popular for reasons I do not fully grok)
+- 📦🛍 Npm  “command line app store” 
+	- Go ahead and open your command prompt...
+		- Windows
+	- macOS
+		- Hold down the command (⌘) key and press the space bar
+	- type the word Terminal
+		- press return
+	- if you’re running another operating system, I’m going to congratulate you and not presume to educate you on how to this
+
+
 
 When she reached the first hills of the **Italic Mountains**, she had a last
 view back on the skyline of her hometown _Bookmarksgrove_, the headline of

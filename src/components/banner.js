@@ -9,9 +9,9 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-const Bio = () => {
+const Banner = () => {
   const data = useStaticQuery(graphql`
-    query BioQuery {
+    query BannerQuery {
       site {
         siteMetadata {
           author {
@@ -31,28 +31,19 @@ const Bio = () => {
   const social = data.site.siteMetadata?.social
 
   return (
-    <div className="bio">
+    <div className="banner-class">
       <StaticImage
-        className="bio-avatar"
+        className="banner-class"
         layout="fixed"
         formats={["AUTO", "WEBP", "AVIF"]}
-        src="../images/profile-pic.png"
-        width={50}
-        height={50}
+        src="../images/down-fuji.jpg"
+        width={300}
+        height={100}
         quality={95}
-        alt="Profile picture"
+        alt="Down Mt Fuji"
       />
-      {author?.name && (
-        <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
-          {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You can follow them on Twitter
-          </a>
-        </p>
-      )}
     </div>
   )
 }
 
-export default Bio
+export default Banner

@@ -1,9 +1,9 @@
-// custom typefaces
+// brand typefaces
 import "typeface-montserrat"
 import "typeface-balthazar"
 // normalize CSS across browsers
 import "./src/normalize.css"
-// custom CSS styles
+// collated CSS styles
 import "./src/style.scss"
 
 // Highlighting for code blocks

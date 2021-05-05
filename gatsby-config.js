@@ -6,7 +6,7 @@ module.exports = {
       summary: `an entity also on Earth just like you`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    siteUrl: `https://jacks.media/`,
     social: {
       twitter: `__j4cks__`,
     },
@@ -79,6 +79,7 @@ module.exports = {
             site {
               siteMetadata {
                 title
+                bannerpic
                 description
                 siteUrl
                 site_url: siteUrl
