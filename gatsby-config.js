@@ -79,7 +79,6 @@ module.exports = {
             site {
               siteMetadata {
                 title
-                bannerpic
                 description
                 siteUrl
                 site_url: siteUrl
