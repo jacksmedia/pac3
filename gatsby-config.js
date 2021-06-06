@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Jacks Media`,
+    title: `Jacks Consulting LLC`,
     author: {
       name: `J4cks`,
       summary: `an entity also on Earth just like you`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://jacks.media/`,
+    siteUrl: `https://j4cks.com/`,
     social: {
       twitter: `__j4cks__`,
     },
@@ -15,8 +15,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Jacks Media`,
-        short_name: `JacksMedia`,
+        name: `Jacks Consulting LLC`,
+        short_name: `J4cks.com`,
         start_url: `/`,
         background_color: `#0005FF`,
         theme_color: `#DD3C00`,

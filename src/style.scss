@@ -32,7 +32,7 @@
   --fontFamily-sans: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --fontFamily-serif: "Balthazar", "Georgia", Cambria, "Times New Roman",
+  --fontFamily-serif: "Cinzel Decorative", "Georgia", Cambria, "Times New Roman",
     Times, serif;
   --font-body: var(--fontFamily-serif);
   --font-heading: var(--fontFamily-sans);
@@ -66,7 +66,7 @@
 
 /* special component styling b/c local stylesheets suck */
 .btn, .navbar-item {
-  font-family: 'Balthazar', serif;
+  font-family: 'Cinzel Decorative', serif;
 }
 
 
@@ -339,7 +339,7 @@ a:focus {
 
 /* testing */
 .geez {
-  font-family: 'Balthazar', serif;
+  font-family: 'Cinzel Decorative', serif;
 }
 
 /* Media queries */

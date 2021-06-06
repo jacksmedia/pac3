@@ -13445,6 +13445,11 @@
   "resolved" "https://registry.npmjs.org/typeface-balthazar/-/typeface-balthazar-1.1.13.tgz"
   "version" "1.1.13"
 
+"typeface-cinzel-decorative@^1.1.13":
+  "integrity" "sha512-SGQfjp6qfbRo3gejszTGw2zze6QpNGmwYC1WkF24HP57Gs3IoQJDz4ifaeFouaoWn25Aof6wD0/CIqxLiZU6gw=="
+  "resolved" "https://registry.npmjs.org/typeface-cinzel-decorative/-/typeface-cinzel-decorative-1.1.13.tgz"
+  "version" "1.1.13"
+
 "typeface-montserrat@^0.0.75":
   "integrity" "sha512-8ski20t3hdwu2T85pVfjK4jsDbwW8yWzd+LAKxYEmu+JVLVlB7G2yfmdKZz06pUwYCLVFvHvup+NYYulHDpE+w=="
   "resolved" "https://registry.npmjs.org/typeface-montserrat/-/typeface-montserrat-0.0.75.tgz"

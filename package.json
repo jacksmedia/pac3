@@ -1,8 +1,8 @@
 {
-  "name": "jacks-media-2021",
+  "name": "jacks-consulting-llc",
   "private": true,
   "description": "PWA with Gatsby SSG",
-  "version": "0.4.21",
+  "version": "0.6.21",
   "author": "Alex Jacks <alex@j4cks.com>",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
@@ -33,6 +33,7 @@
     "react-helmet": "^6.1.0",
     "sass": "^1.32.8",
     "typeface-balthazar": "^1.1.13",
+    "typeface-cinzel-decorative": "^1.1.13",
     "typeface-montserrat": "^0.0.75"
   },
   "devDependencies": {
