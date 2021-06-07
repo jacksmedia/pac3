@@ -1,7 +1,7 @@
 ---
-title: Build Your Own App
-date: "2021-05-05T05:25:25.252Z"
-description: We’ll Use GatsbyJS, which will build us a website with a candy coating that makes it work like an app
+title: Get Wallets, Get Setup
+date: "2021-01-01T12:24:36.480Z"
+description: Crypto wallets are free, and totes in your control. Make some today, and keep their seeds safe!
 ---
 
 We’ll Use GatsbyJS, which will build us a website with a candy coating that makes it work like an app

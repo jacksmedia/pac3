@@ -1,7 +1,7 @@
 ---
-title: Build Your Own App
-date: "2021-05-05T05:25:25.252Z"
-description: We’ll Use GatsbyJS, which will build us a website with a candy coating that makes it work like an app
+title: Join an Exchange
+date: "2021-03-03T11:11:11.222Z"
+description: You can trade bank money for blockchain money at big exchanges, and you can diversify your investments with stablecoins
 ---
 
 We’ll Use GatsbyJS, which will build us a website with a candy coating that makes it work like an app

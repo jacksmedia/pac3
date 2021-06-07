@@ -1,7 +1,7 @@
 ---
-title: Build Your Own App
-date: "2021-05-05T05:25:25.252Z"
-description: We’ll Use GatsbyJS, which will build us a website with a candy coating that makes it work like an app
+title: Get Authentication
+date: "2021-03-03T11:22:33.445Z"
+description: There's an essential app that give you an extra layer of 1-in-a-million security, so grab this before you go any further
 ---
 
 We’ll Use GatsbyJS, which will build us a website with a candy coating that makes it work like an app
