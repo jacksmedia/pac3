@@ -3,7 +3,7 @@ module.exports = {
     title: `Jacks Consulting LLC`,
     author: {
       name: `J4cks`,
-      summary: `a human crypto-currency enthusiast just like you`,
+      summary: `a human crypto-currency enthusiast just like you. `,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://j4cks.com/`,

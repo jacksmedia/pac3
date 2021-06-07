@@ -1,6 +1,6 @@
 // brand typefaces
 import "typeface-montserrat"
-import "typeface-balthazar"
+import "typeface-roboto-slab"
 import "typeface-cinzel-decorative"
 
 // normalize CSS across browsers

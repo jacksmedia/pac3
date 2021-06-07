@@ -13440,11 +13440,6 @@
   dependencies:
     "is-typedarray" "^1.0.0"
 
-"typeface-balthazar@^1.1.13":
-  "integrity" "sha512-QXkwR+SrWNU8PTyiTVz8hI3SpTV6GaHfaRye9V2oaE4jaMcHh8q9geK8IC6qCPbdwlCCDfLh5pG5+p7HpyWKIw=="
-  "resolved" "https://registry.npmjs.org/typeface-balthazar/-/typeface-balthazar-1.1.13.tgz"
-  "version" "1.1.13"
-
 "typeface-cinzel-decorative@^1.1.13":
   "integrity" "sha512-SGQfjp6qfbRo3gejszTGw2zze6QpNGmwYC1WkF24HP57Gs3IoQJDz4ifaeFouaoWn25Aof6wD0/CIqxLiZU6gw=="
   "resolved" "https://registry.npmjs.org/typeface-cinzel-decorative/-/typeface-cinzel-decorative-1.1.13.tgz"
@@ -13454,6 +13449,11 @@
   "integrity" "sha512-8ski20t3hdwu2T85pVfjK4jsDbwW8yWzd+LAKxYEmu+JVLVlB7G2yfmdKZz06pUwYCLVFvHvup+NYYulHDpE+w=="
   "resolved" "https://registry.npmjs.org/typeface-montserrat/-/typeface-montserrat-0.0.75.tgz"
   "version" "0.0.75"
+
+"typeface-roboto-slab@^1.1.13":
+  "integrity" "sha512-2oDTI2Z8GC/ijzhEXPYFA2EmF2Rm446skjY3gK56EzfVEX3BBgil1H9/ifqx9/IfBNwlqVoVs9Ez/g6zOhvC1Q=="
+  "resolved" "https://registry.npmjs.org/typeface-roboto-slab/-/typeface-roboto-slab-1.1.13.tgz"
+  "version" "1.1.13"
 
 "unbox-primitive@^1.0.0":
   "integrity" "sha512-tZU/3NqK3dA5gpE1KtyiJUrEB0lxnGkMFHptJ7q6ewdZ8s12QrODwNbhIJStmJkd1QDXa1NRA8aF2A1zk/Ypyw=="
