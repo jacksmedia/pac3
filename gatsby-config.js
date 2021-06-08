@@ -5,7 +5,7 @@ module.exports = {
       name: `J4cks`,
       summary: `a human crypto-currency enthusiast just like you. `,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Guide to getting started with cryptocurrency.`,
     siteUrl: `https://j4cks.com/`,
     social: {
       twitter: `__j4cks__`,
