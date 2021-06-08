@@ -4,6 +4,8 @@ date: "2021-03-03T11:11:11.222Z"
 description: You can trade bank money for blockchain money at big exchanges, and you can diversify your investments with stablecoins
 ---
 
+![Coinbase logo](./cb.svg)
+
 ### [Join Coinbase](https://www.coinbase.com/join/59153a1fde7f8800bcc87066)
 #### pros
 - easy to use
@@ -13,6 +15,8 @@ description: You can trade bank money for blockchain money at big exchanges, and
 - not many cryptos
 - often has large transaction fees
 
+
+![Binance.us logo](./bn.svg)
 
 ### [Join Binance.us](https://accounts.binance.us/en/register?ref=52116724)
 #### pros
@@ -25,8 +29,10 @@ description: You can trade bank money for blockchain money at big exchanges, and
 - slow to approve ID (about six weeks, as of April 2021 ;_;)
 
 
+![Bitmart logo](./bm.svg)
+
 ### [Join BitMart](https://bitmart.com)
-Use "ttvPEj" as your referral code to say thanks for this article!
+*PS: Use __ttvPEj__ as your referral code to say thanks for this article!*
 #### pros
 - many, many cryptos
 - nicer UX for Limits
