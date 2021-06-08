@@ -64,9 +64,40 @@
   --color-accent: #d1dce5;
 }
 
-/* special component styling b/c local stylesheets suck */
+
+/* 
+             /\                 /\        /\
+            /__\   /\_____/\   /__\      /__\
+            |* |_=_|.J. .M.|_=_=_=_=_=_=_| *|
+            | .| * |  ___  |. * . * . * .|. |
+            |. |   | |{ }| |             | .|
+          __|__|___|_|{_}|_|_____________|__|__
+         /    /     /   /             \        \
+https://jacks.media  K E E P  B U I L D I N G
+
+special component styling b/c local stylesheets suck 
+*/
+/* SLOW MADNESS */
+/* The animation code */
+@keyframes slowmadness {
+  from {background-color: red; color: #0ff; border-radius:15vw;}
+  to {background-color: chocolate; color: azure; border-radius:2vw;}
+  to {background-color: darkorchid; color: gold; border-radius:15vw;}
+  to {background-color: navy; color: orange; border-radius:2vw;}
+}
+/* the animation afix */
+.btn {
+  border: none;
+  color: azure;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  animation: slowmadness 4s ease 2.5s infinite alternate;
+}
+
 .btn, .navbar-item {
-  font-family: 'Cinzel Decorative', serif;
+  font-family: 'Roboto Slab', san-serif;
 }
 
 
