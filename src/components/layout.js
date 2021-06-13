@@ -8,15 +8,15 @@ const Layout = ({ location, title, children }) => {
 
   if (isRootPath) {
     header = (
-      <h1 className="cinzel">
+      <h1 className="cinzel nicerpadding">
         <Link to="/">{title}</Link>
       </h1>
     )
   } else {
     header = (
-      <h5 className="cinzel">
+      <h4 className="cinzel chromatic">
         <Link to="/">{title}</Link>
-      </h5>
+      </h4>
     )
   }
 
@@ -25,8 +25,9 @@ const Layout = ({ location, title, children }) => {
       <header className="global-header">{header}</header>
       <section>{children}</section>
       <footer className="footsie">        
+        <p>All advice herein is logistical, not financial.</p>
         <p>Coded and designed by <a href="https://jacks.media">Jacks Media</a>
-        {` `}{new Date().getFullYear()}</p>
+        {`, `}{new Date().getFullYear()}</p>
       </footer>
     </div>
   )

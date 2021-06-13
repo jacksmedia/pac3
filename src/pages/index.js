@@ -35,7 +35,7 @@ const BlogIndex = ({ data, location }) => {
           return (
             <li key={post.fields.slug} className="box nicerpadding">
               <article
-                className="post-list-item"
+                className="post-list-item chromatic"
                 itemScope
                 itemType="http://schema.org/Article"
               >
