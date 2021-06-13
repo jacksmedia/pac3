@@ -14,19 +14,19 @@ const Layout = ({ location, title, children }) => {
     )
   } else {
     header = (
-      <Link className="cinzel" to="/">
-        {title}
-      </Link>
+      <h5 className="cinzel">
+        <Link to="/">{title}</Link>
+      </h5>
     )
   }
 
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
       <header className="global-header">{header}</header>
-      <main>{children}</main>
-      <footer>        
-        Coded and designed by <a href="https://jacks.media">Jacks Media</a>,
-        {` `}© {new Date().getFullYear()}
+      <section>{children}</section>
+      <footer className="footsie">        
+        <p>Coded and designed by <a href="https://jacks.media">Jacks Media</a>
+        {` `}{new Date().getFullYear()}</p>
       </footer>
     </div>
   )

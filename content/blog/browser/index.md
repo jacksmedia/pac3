@@ -1,6 +1,7 @@
 ---
 title: Use Brave Browser
 date: "2021-04-04T04:24:24.242Z"
+featuredimage: ./logo1.png
 description: A faster online experience that gives you crypto? Sounds more rewarding than Chrome...
 ---
 

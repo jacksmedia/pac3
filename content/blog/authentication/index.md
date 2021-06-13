@@ -1,7 +1,7 @@
 ---
 title: Get Authentication
 date: "2021-03-03T11:22:33.445Z"
-description: There's an essential app that give you an extra layer of 1-in-a-million security, so grab this before you go any further
+description: There's an essential app that gives you an extra layer of 1-in-a-million security, so grab this before you go any further
 ---
 
 ### You need strong, Multi-Factor (more than one device) security in order to send and receive money safely. Google Authenticator is the ideal tool for this purpose.
