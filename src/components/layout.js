@@ -11,13 +11,13 @@ const Layout = ({ location, title, children }) => {
 
   if (isRootPath) {
     headerLogo = (
-      <h1 className="cinzel">
+      <h1 className="bump-left cinzel">
         {title}
       </h1>
     )
   } else {
     headerLogo = (
-      <h4 className="cinzel chromatic">
+      <h4 className="bump-left cinzel chromatic">
         <Link to="/">
         <FontAwesomeIcon icon={faHome} />
           <span>&nbsp;</span>
@@ -32,8 +32,8 @@ const Layout = ({ location, title, children }) => {
       <header>
         <nav className="navbar" role="navigation" aria-label="main navigation">
           <div className="navbar-brand">
-            {headerLogo}
-            <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false">
+            <div className="level-item">{headerLogo}</div>
+            <a role="button" className="navbar-burger level-item" aria-label="menu" aria-expanded="false">
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
@@ -41,7 +41,7 @@ const Layout = ({ location, title, children }) => {
           </div>
           <div className="navbar-menu">
             <div className="navbar-start">
-              <Link to="/wallets" className="navbar-item is-hoverable">Wallets</Link>
+              <Link to="/wallets" className="navbar-item is-hoverable bump-left">Wallets</Link>
               <Link to="/authentication" className="navbar-item is-hoverable">Auth</Link>
               <Link to="/browser" className="navbar-item is-hoverable">Browser</Link>
             </div>

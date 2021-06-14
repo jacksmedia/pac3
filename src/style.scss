@@ -113,8 +113,8 @@ blockquote {
   margin-bottom: var(--spacing-8);
 }
 
-blockquote > :last-child {
-  margin-bottom: var(--spacing-0);
+blockquote {
+  margin: 2rem;
 }
 
 blockquote > ul,
@@ -195,6 +195,10 @@ table {
 }
 
 
+/* navbar */
+.bump-left {
+  padding-left: 20px;
+}
 
 /* sub pages */
 
