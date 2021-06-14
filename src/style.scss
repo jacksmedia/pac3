@@ -199,18 +199,27 @@ table {
 /* sub pages */
 
 .blog-post {
-  background-color: lavender;
+
 }
 
 .blog-post header h1 {
-  margin: var(--spacing-2) var(--spacing-0) var(--spacing-4) var(--spacing-0);
+  font-size: 145%;
+}
+.blog-post header {
+  padding: 1.2rem;
 }
 
-.blog-post header p {
-  font-size: var(--fontSize-2);
-  font-family: var(--font-heading);
+.blog-post {
+  max-width: 90vw;
+  line-height: 2rem;
+  padding-left: 1.2rem;
 }
 
+ul,
+ol {
+  list-style-position: inside;
+  padding-left: 6rem;
+}
 
 /* media queries */
 
@@ -222,6 +231,7 @@ table {
   ul,
   ol {
     list-style-position: inside;
+    padding-left: 2rem;
   }
 }
 

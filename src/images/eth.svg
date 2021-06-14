@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="64px" viewBox="0 0 40 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>eth</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="eth" fill-rule="nonzero">
+            <polygon id="Path" fill="#343434" points="19.6391137 0 19.2101448 1.45803357 19.2101448 43.7667914 19.6391137 44.1949928 39.2783655 32.586283"></polygon>
+            <polygon id="Path" fill="#8C8C8C" points="19.6392518 0 0 32.586283 19.6392518 44.1951463 19.6392518 23.659741"></polygon>
+            <polygon id="Path" fill="#3C3C3B" points="19.6391137 47.9135309 19.3973871 48.2082072 19.3973871 63.2795165 19.6391137 63.9856652 39.2900297 36.3106532"></polygon>
+            <polygon id="Path" fill="#8C8C8C" points="19.6392518 63.9854504 19.6392518 47.9133161 0 36.3104384"></polygon>
+            <polygon id="Path" fill="#141414" points="19.6391137 44.1949468 39.2780585 32.5863904 19.6391137 23.6598484"></polygon>
+            <polygon id="Path" fill="#393939" points="0.000138129496 32.5864058 19.639083 44.1949621 19.639083 23.6598638"></polygon>
+        </g>
+    </g>
+</svg>
