@@ -5,19 +5,20 @@ import { faHome } from '@fortawesome/free-solid-svg-icons'
 import { StaticImage } from "gatsby-plugin-image"
 
 const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
+  const ethWallet = "0xfe130864ccFfA959C2cAd1A96bC5c625748130b5"
+  const btcWallet = "1G4zZpnha3RvdbMxujreWhChXaeTvo3E62"
+  const rootPath = `${__PATH_PREFIX__}/` // boolean test: y/n Home icon aside app title
   const isRootPath = location.pathname === rootPath
   let headerLogo
-
   if (isRootPath) {
     headerLogo = (
-      <h1 className="bump-left cinzel">
+      <h1 className="cinzel">
         {title}
       </h1>
     )
   } else {
     headerLogo = (
-      <h4 className="bump-left cinzel chromatic">
+      <h4 className="cinzel chromatic">
         <Link to="/">
         <FontAwesomeIcon icon={faHome} />
           <span>&nbsp;</span>
@@ -25,31 +26,20 @@ const Layout = ({ location, title, children }) => {
         </Link>
       </h4>
     )
-  }
+  } // end boolean Home icon feature
 
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
-      <header>
-        <nav className="navbar" role="navigation" aria-label="main navigation">
-          <div className="navbar-brand">
-            <div className="level-item">{headerLogo}</div>
-            <a role="button" className="navbar-burger level-item" aria-label="menu" aria-expanded="false">
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-            </a>
-          </div>
-          <div className="navbar-menu">
-            <div className="navbar-start">
-              <Link to="/wallets" className="navbar-item is-hoverable bump-left">Wallets</Link>
-              <Link to="/authentication" className="navbar-item is-hoverable">Auth</Link>
-              <Link to="/browser" className="navbar-item is-hoverable">Browser</Link>
-            </div>
-            <div className="navbar-end">
-              <Link to="/exchanges" className="navbar-item is-hoverable">Exchanges</Link>
-            </div>
-          </div>
-        </nav>
+      <header class="header">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <div className="level-item logo">{headerLogo}</div>
+        <ul className="menu">
+          <li><Link to="/wallets" className="navbar-item is-hoverable">Wallets</Link></li>
+          <li><Link to="/authentication" className="navbar-item is-hoverable">Auth</Link></li>
+          <li><Link to="/browser" className="navbar-item is-hoverable">Browser</Link></li>
+          <li><Link to="/exchanges" className="navbar-item is-hoverable">Exchanges</Link></li>
+        </ul>
       </header>
       <section>{children}</section>
       <footer className="footsie">        
@@ -68,10 +58,8 @@ const Layout = ({ location, title, children }) => {
             alt="Ethereum symbol"
           />
         </p>
-        <span>Donate ETH</span>
-        <p>
-          0xfe130864ccFfA959C2cAd1A96bC5c625748130b5
-        </p>
+        <p>Donate ETH</p>
+        <h6>{ethWallet}</h6>
         <p>
           <StaticImage
             className="tiny-icon"
@@ -84,10 +72,8 @@ const Layout = ({ location, title, children }) => {
             alt="Bitcoin symbol"
           />
         </p>
-        <span>Donate BTC</span>
-        <p>
-          1G4zZpnha3RvdbMxujreWhChXaeTvo3E62
-        </p>
+        <p>Donate BTC</p>
+        <h6>{btcWallet}</h6>
       </footer>
     </div>
   )
