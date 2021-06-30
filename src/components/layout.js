@@ -12,36 +12,36 @@ const Layout = ({ location, title, children }) => {
   let headerLogo
   if (isRootPath) {
     headerLogo = (
-      <h1 className="cinzel">
+      <h3 className="cinzel">
         {title}
-      </h1>
+      </h3>
     )
   } else {
     headerLogo = (
-      <h4 className="cinzel chromatic">
+      <h5 className="cinzel chromatic">
         <Link to="/">
         <FontAwesomeIcon icon={faHome} />
           <span>&nbsp;</span>
         {title}
         </Link>
-      </h4>
+      </h5>
     )
   } // end boolean Home icon feature
 
   return (
-    <div className="global-wrapper" data-is-root-path={isRootPath}>
-      <header class="header">
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <div>
+      <header className="navver">
+        <input className="menu-btn" type="checkbox" id="menu-btn" />
+        <label className="menu-icon" for="menu-btn"><span className="navicon"></span></label>
         <div className="level-item logo">{headerLogo}</div>
         <ul className="menu">
-          <li><Link to="/wallets" className="navbar-item is-hoverable">Wallets</Link></li>
-          <li><Link to="/authentication" className="navbar-item is-hoverable">Auth</Link></li>
-          <li><Link to="/browser" className="navbar-item is-hoverable">Browser</Link></li>
-          <li><Link to="/exchanges" className="navbar-item is-hoverable">Exchanges</Link></li>
+          <li><Link to="/wallets" className="is-hoverable">Wallets</Link></li>
+          <li><Link to="/authentication" className="is-hoverable">Auth</Link></li>
+          <li><Link to="/browser" className="is-hoverable">Browser</Link></li>
+          <li><Link to="/exchanges" className="is-hoverable">Exchanges</Link></li>
         </ul>
       </header>
-      <section>{children}</section>
+      <section className="mains">{children}</section>
       <footer className="footsie">        
         <p>All advice herein is logistical, not financial.</p>
         <p>Coded and designed by <a href="https://jacks.media">Jacks Media</a>

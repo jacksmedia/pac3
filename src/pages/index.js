@@ -1,8 +1,6 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
-
 import Imager from "../components/imager"
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -14,7 +12,6 @@ const BlogIndex = ({ data, location }) => {
     return (
       <Layout location={location} title={siteTitle}>
         <SEO title="All posts" />
-        <Bio />
         <p>
           No blog posts found. Add markdown posts to "content/blog" (or the
           directory you specified for the "gatsby-source-filesystem" plugin in
@@ -22,51 +19,50 @@ const BlogIndex = ({ data, location }) => {
         </p>
       </Layout>
     )
-  }
+  } else {
+    return (
+      <Layout location={location} title={siteTitle}>
+        <SEO title="All posts" />
+        <ol style={{ listStyle: `none` }} className="main-list mains">
+          {posts.map(post => {
+            const title = post.frontmatter.title || post.fields.slug
 
-  return (
-    <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
-      <Bio />
-      <ol style={{ listStyle: `none` }} className="">
-        {posts.map(post => {
-          const title = post.frontmatter.title || post.fields.slug
-
-          return (
-            <li key={post.fields.slug} className="box nicerpadding">
-              <article
-                className="post-list-item chromatic"
-                itemScope
-                itemType="http://schema.org/Article"
-              >
-                <Imager
-                  imageInfo={{
-                    image: post.frontmatter.featuredimage,
-                    alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                  }}
-                 />
-                <header>
-                  <h2 className="bold">
-                    <Link to={post.fields.slug} itemProp="url">
-                      <span itemProp="headline">{title}</span>
-                    </Link>
-                  </h2>
-                </header>
-                <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: post.frontmatter.description || post.excerpt,
+            return (
+              <li key={post.fields.slug} className="box">
+                <article
+                  className="post-list-item chromatic"
+                  itemScope
+                  itemType="http://schema.org/Article"
+                >
+                  <Imager
+                    imageInfo={{
+                      image: post.frontmatter.featuredimage,
+                      alt: `featured image thumbnail for post ${post.frontmatter.title}`,
                     }}
-                    itemProp="description"
-                  />
-                </section>
-              </article>
-            </li>
-          )
-        })}
-      </ol>
-    </Layout>
-  )
+                   />
+                  <header>
+                    <h2 className="bold">
+                      <Link to={post.fields.slug} itemProp="url">
+                        <span itemProp="headline">{title}</span>
+                      </Link>
+                    </h2>
+                  </header>
+                  <section>
+                    <p
+                      dangerouslySetInnerHTML={{
+                        __html: post.frontmatter.description || post.excerpt,
+                      }}
+                      itemProp="description"
+                    />
+                  </section>
+                </article>
+              </li>
+            )
+          })}
+        </ol>
+      </Layout>
+    )
+  }
 }
 
 export default BlogIndex
