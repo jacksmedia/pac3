@@ -117,16 +117,8 @@ table {
   border-spacing: 0.25rem;
 }
 
-
 .mains {
-  min-height: 90vh;
-  height: 90vh;
-  padding-top: 10vh;
-}
-
-.main-list {
-  display: flex;
-  flex-flow: row wrap;
+  padding: 6rem 2rem 8rem 2rem;
 }
 
 .blog-post {
@@ -172,7 +164,7 @@ ul, ol {
 }
 
 .bio-tile {
-  padding: 6.45rem;
+  padding: 1.45rem;
 }
 
 .bio-avatar {

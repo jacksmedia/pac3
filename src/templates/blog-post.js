@@ -28,8 +28,6 @@ const BlogPostTemplate = ({ data, location }) => {
           itemProp="articleBody"
         />
         <hr />
-        <footer>
-        </footer>
       </article>
       <nav className="blog-post-nav">
         <div
