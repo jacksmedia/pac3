@@ -21,12 +21,9 @@ navbar: ~250
 $jacks-red: #DD3C00;
 $jacks-green: #273824; // Dark Angels Mk VII
 $jacks-red-invert: #fff;
-
 $primary: $jacks-red;
 $primary-invert: $jacks-red-invert;
-$body-color: #224;
-$black: #222222;
-
+$black: #242;
 
 
 
@@ -47,7 +44,7 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   font-size: var(--fontSize-1);
-  color: $jacks-green;
+  color: $black;
   background: linear-gradient(to top left, tomato, snow, white, lightcyan);
 }
 
@@ -146,6 +143,12 @@ ul, ol {
     padding-left: 2rem;
   }
 }
+
+article header {
+  padding-top: 4rem;
+  padding-bottom: 7rem;
+}
+
 
 .footsie {
   display: flex;
