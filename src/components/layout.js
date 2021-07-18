@@ -13,9 +13,9 @@ const Layout = ({ location, title, children }) => {
   let headerLogo
   if (isRootPath) {
     headerLogo = (
-      <h3 className="cinzel">
+      <h4 className="cinzel">
         {title}
-      </h3>
+      </h4>
     )
   } else {
     headerLogo = (
