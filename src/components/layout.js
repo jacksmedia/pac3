@@ -1,6 +1,6 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import Footsie from "./Footsie"
+import footsie from "./footsie"
 import Navbar from "./Navbar/Navbar"
 import { Link } from "gatsby"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -36,7 +36,7 @@ const Layout = ({ location, title, children }) => {
       </header>
       <section className="mains">{children}</section>
       <footer>
-        <Footsie />
+        <footsie />
       </footer>
     </div>
   )
