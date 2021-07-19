@@ -386,9 +386,12 @@ th {
 }
 
 
-/* Links w chromatic sauce */
+/* Links + hamburger w chromatic sauce */
 
 a {
+  animation: fun-summertime-palette-text 7s ease 0.65s infinite alternate;
+}
+.chromasauced {
   animation: fun-summertime-palette-text 7s ease 0.65s infinite alternate;
 }
 
