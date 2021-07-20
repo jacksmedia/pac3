@@ -1,7 +1,7 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
-const Footsie = () => {
+const Footblur = () => {
   const ethWallet = "0xfe130864ccFfA959C2cAd1A96bC5c625748130b5"
   const btcWallet = "1G4zZpnha3RvdbMxujreWhChXaeTvo3E62"
   return(
@@ -40,4 +40,4 @@ const Footsie = () => {
     </div>
   )
 }
-export default Footsie
+export default Footblur
