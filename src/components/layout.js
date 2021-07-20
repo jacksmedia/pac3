@@ -1,6 +1,6 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import Footsie from "./Footsie"
+import Footsie from "./Footsie.js"
 import Navbar from "./Navbar/Navbar"
 import { Link } from "gatsby"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
