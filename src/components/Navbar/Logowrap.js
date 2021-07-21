@@ -9,7 +9,7 @@ const Logowrap = () => {
 				layout="fixed"
 				formats={["AUTO", "WEBP", "AVIF"]}
 				src="./logo.png"
-				width={64}
+				width={132}
 				height={64}
 				quality={95}
 				alt="Jacks Media can help you!"

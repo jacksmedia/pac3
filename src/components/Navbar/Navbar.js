@@ -4,11 +4,13 @@ import NavbarLinks from "./NavbarLinks"
 import Logowrap from "./Logowrap"
 
 const Navigation = styled.nav`
+  min-height: 72px;
   height: 10vh;
   display: flex;
   background: linear-gradient(#DD3C00, #0500FF);
   position: relative;
   justify-content: space-between;
+  align-items: center;
   text-transform: uppercase;
   border-bottom: 2px solid #33333320;
   margin: 0 auto;
