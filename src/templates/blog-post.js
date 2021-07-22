@@ -34,8 +34,8 @@ const BlogPostTemplate = ({ data, location }) => {
           style={{
             display: `flex`,
             flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            padding: 10,
+            justifyContent: `space-around`,
+            padding: 20,
           }}
         >
           <div>

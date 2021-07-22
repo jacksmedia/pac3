@@ -50,10 +50,10 @@ const Navbox = styled.div`
     position: fixed;
     width: 100%;
     justify-content: flex-start;
-    padding-top: 10vh;
-    background-color: #fff;
+    padding-top: 72px;
+    background-color: snow;
     transition: all 0.3s ease-in;
-    top: 8vh;
+    top: 72px;
     left: ${props => (props.open ? "-100%" : "0")};
   }
 `
