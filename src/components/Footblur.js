@@ -6,10 +6,12 @@ const Footblur = () => {
   const btcWallet = "1G4zZpnha3RvdbMxujreWhChXaeTvo3E62"
   return(
     <div className="footsie">        
-      <p>All advice herein is logistical, not financial.</p>
-      <p>Coded and designed by <a href="https://jacks.media">Jacks Media</a>
-      {`, `}{new Date().getFullYear()}</p>
-      <p>
+      <div className="floatybox">
+        <p>All advice herein is logistical, not financial.</p>
+        <p>Coded and designed by <a href="https://jacks.media">Jacks Media</a>
+        {`, `}{new Date().getFullYear()}</p>
+      </div>
+      <div className="floatybox">
         <StaticImage
           className="tiny-icon"
           layout="fixed"
@@ -20,10 +22,10 @@ const Footblur = () => {
           quality={95}
           alt="Ethereum symbol"
         />
-      </p>
-      <p>Donate ETH</p>
-      <h6>{ethWallet}</h6>
-      <p>
+        <p>Donate ETH</p>
+        <h6>{ethWallet}</h6>
+      </div>
+      <div className="floatybox">
         <StaticImage
           className="tiny-icon"
           layout="fixed"
@@ -34,9 +36,9 @@ const Footblur = () => {
           quality={95}
           alt="Bitcoin symbol"
         />
-      </p>
-      <p>Donate BTC</p>
-      <h6>{btcWallet}</h6>
+        <p>Donate BTC</p>
+        <h6>{btcWallet}</h6>
+      </div>
     </div>
   )
 }

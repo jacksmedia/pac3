@@ -45,7 +45,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: var(--fontSize-1);
   color: $black;
-  background: linear-gradient(to top left, tomato, snow, white, lightcyan);
+  background: repeating-conic-gradient(from 30deg, rgba(255,132,110,0.5) 0% 120deg, lightcyan 0% 50%) 0/ 4em 6.928em;
 }
 
 hr {
@@ -162,7 +162,7 @@ ul, ol {
 }
 
 .footsie > p {
-  color: snow;
+  color: navy;
   padding: 0.8rem;
 }
 
@@ -183,7 +183,7 @@ ul, ol {
 /* animations code */
 @keyframes fun-summertime-palette-btn {
   from {
-    background-color: firebrick; 
+    background-color: black; 
     color: azure; 
   }
   to {
@@ -195,14 +195,17 @@ ul, ol {
   0% {
     color: navy; 
   }
-  33% {
-    color: tomato; 
+  20% {
+    color: gold; 
   }
-  66% {
+  40% {
     color: red; 
   }
-  100% {
+  60% {
     color: fuchsia; 
+  }
+  80% {
+    color: blue; 
   }
 }
 
@@ -232,6 +235,11 @@ ul, ol {
   animation: fun-summertime-palette-text 4s ease 0.25s infinite alternate;  
 }
 
+
+
+/*
+DEPRECATED IN FAVOR OF STYLED-COMPONENTS
+*/
 
 /* navbar & its animation */
 
@@ -368,7 +376,19 @@ ul, ol {
   }
 }
 
-/* navbar & animation end */
+/* navbar & animation end
+
+DEPRECATED ANYWAYS :D
+
+ */
+
+
+
+
+
+
+
+
 
 /* table UI fixes for MD */
 table {
@@ -386,17 +406,25 @@ th {
 }
 
 
+
 /* Links + hamburger w chromatic sauce */
 
 a {
-  animation: fun-summertime-palette-text 7s ease 0.65s infinite alternate;
-}
-.chromasauced {
-  animation: fun-summertime-palette-text 7s ease 0.65s infinite alternate;
+  animation: fun-summertime-palette-text 4s ease 0.95s infinite;
 }
 
 a:hover,
 a:focus {
   text-decoration: none;
 }
+
+
+/* for callouts and special copy  */
+.floatybox {
+  background-color: snow;
+  border-radius: 1vw;
+  padding: 1.6rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
 
