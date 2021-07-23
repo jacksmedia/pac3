@@ -14,11 +14,11 @@ branding: 20 - 30
 generic typography stuff: 33 - 110 
 components: ~120
 animations: ~200
-navbar: ~250
 */
 
 /* jacks branding stuff */
 $jacks-red: #DD3C00;
+$jacks-blue: #0500FF;
 $jacks-green: #273824; // Dark Angels Mk VII
 $jacks-red-invert: #fff;
 $primary: $jacks-red;
@@ -60,6 +60,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: var(--spacing-6);
   line-height: var(--lineHeight-tight);
   letter-spacing: -0.025em;
+  word-wrap: break-word;
 }
 
 h2, h3, h4, h5, h6 {
@@ -186,8 +187,8 @@ ul, ol {
 /* animations code */
 @keyframes fun-summertime-palette-btn {
   from {
-    background-color: black; 
-    color: azure; 
+    background-color: $jacks-blue; 
+    color: white; 
   }
   to {
     background-color: navy;
@@ -212,6 +213,18 @@ ul, ol {
   }
 }
 
+@keyframes veggie-creamsicle-palette-text {
+  0% {
+    color: white; 
+  }
+  50% {
+    color: tomato; 
+  }
+  100% {
+    color: white; 
+  }
+}
+
 /* animated button bg colors */
 .btn {
   border: none;
@@ -222,6 +235,7 @@ ul, ol {
   font-size: 2.9vw;
   border-radius: 2vw;
   margin: 4px 2px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   animation: fun-summertime-palette-btn 6s ease 0.35s infinite alternate;
 }
 
@@ -234,161 +248,9 @@ ul, ol {
   font-size: inherit;
 }
 
-.chromatic-as-link {
-  animation: fun-summertime-palette-text 4s ease 0.25s infinite alternate;  
+.creamsicle-text {
+  animation: veggie-creamsicle-palette-text 4s ease 0.25s infinite alternate;  
 }
-
-
-
-/*
-DEPRECATED IN FAVOR OF STYLED-COMPONENTS
-*/
-
-/* navbar & its animation */
-
-.bump-left {
-  padding-left: 20px;
-}
-
-.navver {
-  background-color: rgba(0,0,255,0.5);
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-  position: fixed;
-  width: 100%;
-  z-index: 3;
-}
-
-.navver ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  background-color: #fff;
-}
-
-.navver li a {
-  display: block;
-  padding: 20px 20px;
-  border-right: 1px solid #f2f2f2;
-  text-decoration: none;
-}
-
-.navver li a:hover,
-.navver .menu-btn:hover {
-  background-color: #f2f2f2;
-}
-
-.navver .logo {
-  display: block;
-  float: left;
-  font-size: 1.7em;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-
-/* navbar menu */
-
-.navver .menu {
-  clear: both;
-  max-height: 0;
-  transition: max-height .2s ease-out;
-}
-
-/* menu icon */
-
-.navver .menu-icon {
-  cursor: pointer;
-  display: inline-block;
-  float: right;
-  padding: 28px 20px;
-  position: relative;
-  user-select: none;
-}
-
-.navver .menu-icon .navicon {
-  background: #333;
-  display: block;
-  height: 2px;
-  position: relative;
-  transition: background .2s ease-out;
-  width: 18px;
-}
-
-.navver .menu-icon .navicon:before,
-.navver .menu-icon .navicon:after {
-  background: #333;
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-  width: 100%;
-}
-
-.navver .menu-icon .navicon:before {
-  top: 5px;
-}
-
-.navver .menu-icon .navicon:after {
-  top: -5px;
-}
-
-/* menu btns */
-
-.navver .menu-btn {
-  display: none;
-}
-
-.navver .menu-btn:checked ~ .menu {
-  max-height: 240px;
-}
-
-.navver .menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent;
-}
-
-.navver .menu-btn:checked ~ .menu-icon .navicon:before {
-  transform: rotate(-45deg);
-}
-
-.navver .menu-btn:checked ~ .menu-icon .navicon:after {
-  transform: rotate(45deg);
-}
-
-.navver .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.navver .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-  top: 0;
-}
-
-/* responsive collpase on displays below tablet width */
-
-@media (min-width: 48em) {
-  .navver li {
-    float: left;
-  }
-  .navver li a {
-    padding: 20px 26px;
-  }
-  .navver .menu {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-  .navver .menu-icon {
-    display: none;
-  }
-}
-
-/* navbar & animation end
-
-DEPRECATED ANYWAYS :D
-
- */
-
-
-
-
-
 
 
 

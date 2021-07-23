@@ -5,11 +5,11 @@ import { Link } from "gatsby"
 const NavbarLinks = () => {
   return (
     <>
-      <NavItem to="/" className="is-hoverable">Home</NavItem>
-      <NavItem to="/wallets" className="is-hoverable">Wallets</NavItem>
-      <NavItem to="/authentication" className="is-hoverable">Auth</NavItem>
-      <NavItem to="/browser" className="is-hoverable">Browser</NavItem>
-      <NavItem to="/exchanges" className="is-hoverable">Exchanges</NavItem>
+      <NavItem to="/" className="is-hoverable creamsicle-text">Home</NavItem>
+      <NavItem to="/wallets" className="is-hoverable creamsicle-text">Wallets</NavItem>
+      <NavItem to="/authentication" className="is-hoverable creamsicle-text">Auth</NavItem>
+      <NavItem to="/browser" className="is-hoverable creamsicle-text">Browser</NavItem>
+      <NavItem to="/exchanges" className="is-hoverable creamsicle-text">Exchanges</NavItem>
     </>
   )
 }
