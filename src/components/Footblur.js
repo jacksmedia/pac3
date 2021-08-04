@@ -22,8 +22,8 @@ const Footblur = () => {
           quality={95}
           alt="Ethereum symbol"
         />
-        <p>Donate ETH</p>
-        <h6>{ethWallet}</h6>
+        <h6>Donate ETH</h6>
+        <p>{ethWallet}</p>
       </div>
       <div className="floatybox">
         <StaticImage
@@ -36,8 +36,8 @@ const Footblur = () => {
           quality={95}
           alt="Bitcoin symbol"
         />
-        <p>Donate BTC</p>
-        <h6>{btcWallet}</h6>
+        <h6>Donate BTC</h6>
+        <p>{btcWallet}</p>
       </div>
     </div>
   )
