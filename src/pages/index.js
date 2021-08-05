@@ -1,5 +1,7 @@
 import React, { useState, setState } from "react"
 import { Link, graphql } from "gatsby"
+import TransitionLink from "gatsby-plugin-transition-link"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Imager from "../components/imager"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -43,9 +45,9 @@ const BlogIndex = ({ data, location }) => {
                    />
                   <header>
                     <h2 className="bold">
-                      <Link to={post.fields.slug} itemProp="url">
+                      <AniLink paintDrip to={post.fields.slug} itemProp="url">
                         <span itemProp="headline">{title}</span>
-                      </Link>
+                      </AniLink>
                     </h2>
                   </header>
                   <section>

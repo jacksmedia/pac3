@@ -27,6 +27,7 @@ module.exports = {
     },
     `gatsby-plugin-image`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-transition-link`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
