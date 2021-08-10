@@ -3,7 +3,7 @@ import styled from "styled-components"
 import NavbarLinks from "./NavbarLinks"
 import Logowrap from "./Logowrap"
 
-const Navigation = styled.nav`
+const TopBar = styled.nav`
   min-height: 72px;
   height: 10vh;
   display: flex;
@@ -39,7 +39,7 @@ const Toggle = styled.div`
   }
 `
 
-const Navbox = styled.div`
+const Navtray = styled.div`
   display: flex;
   height: 100%;
   justify-content: flex-end;
@@ -93,7 +93,7 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
 
   return (
-    <Navigation>
+    <TopBar>
       <Logowrap />
       <Toggle
         navbarOpen={navbarOpen}
@@ -102,15 +102,15 @@ const Navbar = () => {
         {navbarOpen ? <Hamburger open /> : <Hamburger />}
       </Toggle>
       {navbarOpen ? (
-        <Navbox>
+        <Navtray>
           <NavbarLinks />
-        </Navbox>
+        </Navtray>
       ) : (
-        <Navbox open>
+        <Navtray open>
           <NavbarLinks />
-        </Navbox>
+        </Navtray>
       )}
-    </Navigation>
+    </TopBar>
   )
 }
 

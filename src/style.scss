@@ -165,9 +165,21 @@ ul, ol {
   background: linear-gradient(270deg, rgba(221,60,0,0.8), rgba(45,0,0,0) 66.6%),linear-gradient(0deg, rgba(0,153,199,0.8), rgba(0,45,0,0) 66.6%),linear-gradient(90deg, rgba(5,0,255,0.8), rgba(0,0,45,0) 66.6%);
 }
 
-.footsie > p {
-  color: navy;
-  padding: 0.8rem;
+.bottommost-text {
+  color: white;
+}
+
+.engraved {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.engraved > h* {
+  padding-left: 40px;  
 }
 
 .bio-tile {
