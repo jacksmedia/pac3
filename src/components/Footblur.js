@@ -12,7 +12,7 @@ const Footblur = () => {
         {`, `}{new Date().getFullYear()}</p>
       </div>
       <div className="bottommost-text">
-        <div className="engraved">
+        <div>
         <StaticImage
           className="tiny-icon"
           layout="fixed"
@@ -23,9 +23,9 @@ const Footblur = () => {
           quality={95}
           alt="Ethereum symbol"
         />
-        <h5>{ethWallet}</h5>
+        <h5 className="engraved">{ethWallet}</h5>
       </div>
-      <div className="engraved">
+      <div>
         <StaticImage
           className="tiny-icon"
           layout="fixed"
@@ -36,7 +36,7 @@ const Footblur = () => {
           quality={95}
           alt="Bitcoin symbol"
         />
-        <h6>{btcWallet}</h6>
+        <h6 className="engraved">{btcWallet}</h6>
       </div>
       </div>
     </div>
