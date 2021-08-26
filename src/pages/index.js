@@ -12,8 +12,8 @@ const Post = styled.li`
   border-radius: 1vw;
   padding: 2rem;
   margin: 4.85rem 0.85rem 1.85rem 0.85rem;
-  transition: background-color 3.3s ease;
-  background-color: ${({ isVisible }) => (isVisible ? 'snow' : ' black')};
+  transition: background-color 1.3s ease;
+  background-color: ${({ isVisible }) => (isVisible ? 'snow' : '#9CB5CE')};
 `
 
 const BlogIndex = ({ data, location }) => {

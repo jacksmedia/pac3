@@ -45,7 +45,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: var(--fontSize-1);
   color: $black;
-  background: linear-gradient(0deg, rgba(112,31,0,1) 0%, rgba(2,0,94,1) 100%);
+  background: linear-gradient(0deg, #F7EBDD, #9CB5CE, #C6BDAD);
 }
 
 hr {
@@ -287,7 +287,7 @@ th {
 /* Links + hamburger w chromatic sauce */
 
 a {
-  animation: fun-summertime-palette-text 4s ease 0.95s infinite;
+  animation: fun-summertime-palette-text 3.25s ease 0.5s infinite;
 }
 
 a:hover,
